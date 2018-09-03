@@ -16,6 +16,7 @@ const Bar = styled.div`
   padding-right: 15px;
   margin-bottom: 10px;
   z-index: 99;
+  background: #fff;
 `;
 
 const NavLinksContainer = styled.div`
