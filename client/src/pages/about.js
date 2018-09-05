@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import {
   AboutContainer, HeaderCard, MaisonContainer, ContactDetails,
   TheDeets, AboutMeText, AboutMaisonSection,
@@ -12,7 +12,27 @@ import Email from './assets/about/email.svg';
 import LinkIcon from './assets/about/link.svg';
 import LocationDrop from './assets/about/location.svg';
 import Laptop from './assets/about/laptop.svg';
+import CssIcon from './assets/about/css3.svg';
+import Git from './assets/about/git.svg';
+import HtmlIcon from './assets/about/html5.svg';
+import Js from './assets/about/js.svg';
+import Mongo from './assets/about/mongo.svg';
+import NodeIcon from './assets/about/node.svg';
+import ReactIcon from './assets/about/react.svg';
+import Sass from './assets/about/sass.svg';
+import ReduxIcon from './assets/about/redux.svg';
 // import { } from 'react-animations';
+
+const TechIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  & > img {
+    margin-left: 15px;
+  }
+`;
 
 const AboutPage = () => (
   <AboutContainer>
@@ -47,15 +67,18 @@ const AboutPage = () => (
             customer relations, etc.
           </p>
           <p>
-            Aside from frontend work, I use my time to work to develop my skills further.
-            I typically work on projects utalizing the MERN stack. I really
+            Aside from frontend work, I spend time working to develop my technical skills further.
+            I typically like to work on projects utalizing the MERN stack. My goal is to become a fullstack
+            developer at some point in my career! I really
             enjoy solving complex problems, and there is certainly no shortage
-            of those in web developement. Outside of web dev, I play and practice quite
+            of those in web developement. I consider myself a quick learner, and take pride
+            in pushing myself to learn new things.
+            Outside of web dev, I play and practice quite
             a bit of golf.
             <span> (If you want to play golf, my answer is not no.) </span>
           </p>
           <p>
-            I am available for contact anytime via email. You can view my email, github,
+            I am available for contact anytime via email. You can view my email, Github,
             or Linkedin via the social links above &amp; below. Thanks for looking.
           </p>
         </AboutMeText>
@@ -74,8 +97,19 @@ const AboutPage = () => (
             <TheDeets>
               <p>
                 <img src={Laptop} alt="laptop icon" />
-                MacOS / Windows
+                MacOS/Windows
               </p>
+              <TechIcons>
+                <img src={Js} alt="javascript logo" />
+                <img src={HtmlIcon} alt="html5 logo" />
+                <img src={CssIcon} alt="test" />
+                <img src={Sass} alt="sass logo" />
+                <img src={ReactIcon} alt="react js logo" />
+                <img src={ReduxIcon} alt="redux logo" />
+                <img src={NodeIcon} alt="node logo" />
+                <img src={Mongo} alt="mongodb logo" />
+                <img src={Git} alt="git logo" />
+              </TechIcons>
             </TheDeets>
           </TechnicalContainer>
           <AboutMeText>

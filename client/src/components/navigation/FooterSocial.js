@@ -12,7 +12,7 @@ const FooterContainer = styled.div`
     justify-content: center;
     opacity: 0;
     animation: 1.5s ease-in ${slideUp} forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 `;
 
 const LinkSvg = styled.svg`

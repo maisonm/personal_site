@@ -44,8 +44,8 @@ export const ContactDetails = styled.div`
 export const TheDeets = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin-left: 20px;
+    width: 100%;
 
     & > p {
         font-size: .75em;
