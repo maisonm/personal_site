@@ -1,2 +1,4 @@
 # personal_website
-portfolio 
+
+
+My personal website built with Gatsby / React.
