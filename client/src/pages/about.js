@@ -68,7 +68,7 @@ const AboutPage = () => (
           </p>
           <p>
             Aside from frontend work, I spend time working to develop my technical skills further.
-            I typically like to work on projects utalizing the MERN stack. My goal is to become a fullstack
+            I typically like to work on projects utalizing the MERN stack. My goal is to become a fullstack Javascript
             developer at some point in my career! I really
             enjoy solving complex problems, and there is certainly no shortage
             of those in web developement. I consider myself a quick learner, and take pride
@@ -125,7 +125,7 @@ const AboutPage = () => (
               <TechnicalSkillLabel> Backend / </TechnicalSkillLabel>
               <p>
                 NodeJs, Express, MongoDB, Mongoose, JSON Web Tokens(JWT), npm, Yarn, REST-
-                ful API’s, Webpack
+                ful API’s, graphql, Webpack
               </p>
             </TechnicalSkillBlock>
             <TechnicalSkillBlock>
