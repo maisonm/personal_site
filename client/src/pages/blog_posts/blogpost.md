@@ -1,6 +1,7 @@
 ---
 path: '/first-post'
 title: 'Test Blog Post'
+date: '08-18-18'
 ---
 
 Lorem ipsum lacus habitasse pellentesque diam nisl curae risus eros, velit habitasse risus luctus elit id facilisis mi cras dictum, non tellus blandit diam sed consequat erat duis.

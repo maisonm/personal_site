@@ -1,73 +1,33 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Follow } from 'react-twitter-widgets';
+
+import Link from 'gatsby-link';
+
 import styled from 'styled-components';
 import test from './test.png';
 
-const BlogTitle = styled.h3`
-`;
+// Styles
 
-const BlogContentContainer = styled.div`
-    border: solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    z-index: -99;
-`;
+import {
+  BlogTitle, BlogContentContainer, BlogPost,
+  BlogDetails, BlogInfo, Thumbnail, BlogContent,
+  Content,
+} from './styles/blog_posts/styles';
 
-const BlogPost = styled.div`
-    /* border: solid black; */
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    
-`;
+const BackLink = styled.div`
+    margin-top: 14px;
+    & > a {
+        text-decoration: none;
+        font-size: .7em;
+        color: #595959;
+        transition: .3s;
 
-const BlogInfo = styled.div`
-    /* border: solid orange; */
-    min-width: 250px;
-    max-width: 300px;
-    margin-left: 4px;
-    margin-right: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-    & > img {
-        width: 156px;
-        margin-top: 16px;
-        
-    };
-
-    & > div {
-        border-top: 1.5px solid #c0c0c0;
-        margin-top: 20px;
-        line-height: 10px;
-        width: 80%;
-
-        & > p {
-            text-align: right;
-            font-size: .85em;
-            font-weight: 500;
-        };
-    }
-`;
-
-const BlogContent = styled.div`
-    /* border: solid purple; */
-    overflow: auto;
-    flex-basis: 60%;
-    margin-right: 4px;
-`;
-
-const Content = styled.div`
-    & > p {
-        
-        font-size: .8em;
+        &:hover {
+            transition: .3s;
+            font-size: .72em;
+            color: #3A6EA5;
+        }
     }
 `;
 
@@ -77,11 +37,22 @@ export default function Template({ data }) {
     <BlogContentContainer>
       <BlogPost>
         <BlogInfo>
-            <img src={test} />
-
-            <div>
-                <p>August 31st, 2018</p>
-            </div>
+          <Thumbnail src={test} alt={post.frontmatter.title} />
+          <BlogDetails>
+            <p>August 31st, 2018</p>
+            <p>
+              { post.frontmatter.date }
+            </p>
+            <Follow username="maison_moa" />
+            <BackLink>
+              <Link
+                to="/"
+                innerRef={(el) => { this.myLink = el; }}
+              >
+               &#60; back
+              </Link>
+            </BackLink>
+          </BlogDetails>
         </BlogInfo>
         <BlogContent>
           <BlogTitle>
@@ -101,6 +72,7 @@ export const postQuery = graphql`
         frontmatter {
           path
           title
+          date
         }
       }
     }

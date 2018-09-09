@@ -21,7 +21,6 @@ import NodeIcon from './assets/about/node.svg';
 import ReactIcon from './assets/about/react.svg';
 import Sass from './assets/about/sass.svg';
 import ReduxIcon from './assets/about/redux.svg';
-// import { } from 'react-animations';
 
 const TechIcons = styled.div`
   display: flex;

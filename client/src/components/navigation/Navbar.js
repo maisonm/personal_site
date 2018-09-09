@@ -1,5 +1,5 @@
 import React from 'react';
-// import Link from 'gatsby-link';
+import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 // Assets
@@ -17,6 +17,11 @@ const Bar = styled.div`
   margin-bottom: 10px;
   z-index: 99;
   background: #fff;
+  /* This is the navbar logo home link wrapped in gatsby-link */
+  & > a {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const NavLinksContainer = styled.div`
@@ -29,28 +34,60 @@ const NavLinksContainer = styled.div`
 const SiteLink = styled.div`
   display: flex;
   align-items: center;
-  font-size: .8em;
   margin: 6px;
-  cursor: pointer;
-  transition: .3s;
-  font-weight: 500;
 
-  &:hover {
-    color: #3A6EA5;
+  & > a {
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 500;
     transition: .3s;
-    letter-spacing: .2px;
+    color: #020202;
+
+    &:hover {
+      color: #3A6EA5;
+      transition: .3s;
+      letter-spacing: .2px;
+    }
   }
 `;
 
 
 const Navbar = () => (
   <Bar>
-    <img src={PersonalLogo} alt="maison logo" />
+    <Link
+      to="/"
+    >
+      <img src={PersonalLogo} alt="maison logo" />
+    </Link>
     <NavLinksContainer>
-      <SiteLink>about</SiteLink>
-      <SiteLink>contact</SiteLink>
-      <SiteLink>blog</SiteLink>
-      <SiteLink>projects</SiteLink>
+      <SiteLink>
+        <Link
+          to="/about"
+        >
+        about
+        </Link>
+      </SiteLink>
+      <SiteLink>
+        <Link
+          to="/"
+        >
+        contact
+        </Link>
+      </SiteLink>
+      <SiteLink>
+        <Link
+          to="/first-post"
+        >
+        blog
+        </Link>
+      </SiteLink>
+      <SiteLink>
+        <Link
+          to="/"
+        >
+        projects
+        </Link>
+      </SiteLink>
     </NavLinksContainer>
 
   </Bar>
