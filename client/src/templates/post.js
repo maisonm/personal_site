@@ -7,7 +7,10 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import test from './test.png';
 
+import 'prismjs/themes/prism-solarizedlight.css';
+
 // Styles
+import './styles/blog_posts/code_highlighting.css';
 
 import {
   BlogTitle, BlogContentContainer, BlogPost,

@@ -4,7 +4,50 @@ title: 'Test Blog Post'
 date: '08-18-18'
 ---
 
+![](js.png)
+
 Lorem ipsum lacus habitasse pellentesque diam nisl curae risus eros, velit habitasse risus luctus elit id facilisis mi cras dictum, non tellus blandit diam sed consequat erat duis.
+
+```
+module.exports = {
+  siteMetadata: {
+    title: 'Maison Moa | Web Developer',
+  },
+  plugins: ['gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 192,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: '>',
+              aliases: {},
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages/blog_posts`,
+        name: 'blog posts',
+      },
+    },
+  ],
+};
+
+```
 
 Maecenas nulla aenean leo nulla pulvinar aenean dictumst malesuada, molestie nec luctus condimentum nibh donec vivamus taciti, porta tortor magna felis vel litora quis donec lacinia posuere venenatis imperdiet luctus.
 
