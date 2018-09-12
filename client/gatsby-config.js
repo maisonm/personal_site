@@ -5,6 +5,7 @@ module.exports = {
   plugins: ['gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -12,7 +13,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 192,
+              maxWidth: 400,
             },
           },
           {

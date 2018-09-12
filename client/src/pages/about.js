@@ -116,15 +116,15 @@ const AboutPage = () => (
               <TechnicalSkillLabel> Frontend / </TechnicalSkillLabel>
               <p>
                 ReactJs, Redux, Javascrtipt (ES6), JQuery, consuming API’s, HTML5, CSS3, SASS,
-                Flexbox, CSS Grid, Bootstrap, Bulma, Wordpress, Gatsby, Responsive Development, W3C
+                Flexbox, CSS Grid, Bootstrap, Bulma, Wordpress, Responsive Development, W3C
                 Accessibility, Developer Tools
               </p>
             </TechnicalSkillBlock>
             <TechnicalSkillBlock>
               <TechnicalSkillLabel> Backend / </TechnicalSkillLabel>
               <p>
-                NodeJs, Express, MongoDB, Mongoose, JSON Web Tokens(JWT), npm, Yarn, REST-
-                ful API’s, graphql, Webpack
+                NodeJs, Express, MongoDB, Mongoose, Gatsby, JSON Web Tokens(JWT), npm, Yarn, REST-
+                ful API’s, GraphQL, Webpack
               </p>
             </TechnicalSkillBlock>
             <TechnicalSkillBlock>

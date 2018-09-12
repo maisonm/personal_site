@@ -36,11 +36,13 @@ const BackLink = styled.div`
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
+
+  console.log(post.frontmatter.image.childImageSharp.resolutions.src);
   return (
     <BlogContentContainer>
       <BlogPost>
         <BlogInfo>
-          <Thumbnail src={test} alt={post.frontmatter.title} />
+          <Thumbnail src={post.frontmatter.image.childImageSharp.resolutions.src} alt={post.frontmatter.title} />
           <BlogDetails>
             <p>August 31st, 2018</p>
             <p>
@@ -67,7 +69,6 @@ export default function Template({ data }) {
     </BlogContentContainer>
   );
 }
-
 export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
       markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -76,6 +77,13 @@ export const postQuery = graphql`
           path
           title
           date
+          image {
+            childImageSharp {
+              resolutions {
+                src
+              }
+            }
+          }
         }
       }
     }

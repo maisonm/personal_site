@@ -1,7 +1,8 @@
 ---
 path: '/first-post'
 title: 'Test Blog Post'
-date: '08-18-18'
+date: '08-28-18'
+image: './js.png'
 ---
 
 ![](js.png)
