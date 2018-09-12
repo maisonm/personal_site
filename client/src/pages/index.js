@@ -73,7 +73,7 @@ const IndexPage = () => (
     </span>
     <span>
       <p>This website was built with React,</p>
-      <p>Gatsby, NodeJS, and good ole fashioned love.</p>
+      <p>Gatsby, GraphQL, NodeJS, and good ole fashioned love.</p>
     </span>
   </HeroContainer>
 )
