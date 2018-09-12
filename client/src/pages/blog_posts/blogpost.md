@@ -1,7 +1,7 @@
 ---
 path: '/first-post'
 title: 'Test Blog Post'
-date: '08-28-18'
+date: 'September 9th, 2018'
 image: './js.png'
 ---
 

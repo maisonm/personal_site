@@ -44,10 +44,7 @@ export default function Template({ data }) {
         <BlogInfo>
           <Thumbnail src={post.frontmatter.image.childImageSharp.resolutions.src} alt={post.frontmatter.title} />
           <BlogDetails>
-            <p>August 31st, 2018</p>
-            <p>
-              { post.frontmatter.date }
-            </p>
+            <p>{ post.frontmatter.date }</p>
             <Follow username="maison_moa" />
             <BackLink>
               <Link
