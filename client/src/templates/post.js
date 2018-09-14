@@ -1,43 +1,20 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-import { Follow } from 'react-twitter-widgets';
-
 import Link from 'gatsby-link';
-
-import styled from 'styled-components';
-import test from './test.png';
-
-import 'prismjs/themes/prism-solarizedlight.css';
+import { Follow, Share } from 'react-twitter-widgets';
 
 // Styles
-import './styles/blog_posts/code_highlighting.css';
+import './styles/blog_posts/code_highlighting.css'; // This is custom CSS for PrismJs syntax highlighting
 
 import {
   BlogTitle, BlogContentContainer, BlogPost,
   BlogDetails, BlogInfo, Thumbnail, BlogContent,
-  Content,
+  Content, TwitterShare, BackLink,
 } from './styles/blog_posts/styles';
 
-const BackLink = styled.div`
-    margin-top: 14px;
-    & > a {
-        text-decoration: none;
-        font-size: .7em;
-        color: #595959;
-        transition: .3s;
-
-        &:hover {
-            transition: .3s;
-            font-size: .72em;
-            color: #3A6EA5;
-        }
-    }
-`;
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
 
-  console.log(post.frontmatter.image.childImageSharp.resolutions.src);
   return (
     <BlogContentContainer>
       <BlogPost>
@@ -46,6 +23,9 @@ export default function Template({ data }) {
           <BlogDetails>
             <p>{ post.frontmatter.date }</p>
             <Follow username="maison_moa" />
+            <TwitterShare>
+              <Share />
+            </TwitterShare>
             <BackLink>
               <Link
                 to="/"

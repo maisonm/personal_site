@@ -76,6 +76,6 @@ const IndexPage = () => (
       <p>Gatsby, GraphQL, NodeJS, and good ole fashioned love.</p>
     </span>
   </HeroContainer>
-)
+);
 
 export default IndexPage;

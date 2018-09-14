@@ -69,3 +69,23 @@ export const Content = styled.div`
       font-size: .8em;
     }
 `;
+
+export const BackLink = styled.div`
+    margin-top: 14px;
+    & > a {
+        text-decoration: none;
+        font-size: .7em;
+        color: #595959;
+        transition: .3s;
+
+        &:hover {
+            transition: .3s;
+            font-size: .72em;
+            color: #3A6EA5;
+        }
+    }
+`;
+
+export const TwitterShare = styled.div`
+    margin-top: 4px;
+`;
