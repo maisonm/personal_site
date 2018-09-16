@@ -29,11 +29,12 @@ const BlogCardContainer = styled.div`
   overflow: auto;
   justify-content: space-between;
   align-items: center;
+  padding: 6px;
 `;
 
 const BlogPostCard = styled.div`
   min-height: 220px;
-  width: 50%;
+  min-width: 50%;
   box-shadow: 0px 0px 8px #b3b3b3;
   margin-bottom: 10px;
   border-radius: 2px;
@@ -55,7 +56,7 @@ const BlogPostCard = styled.div`
   &:hover {
     transition: all cubic-bezier(.42,.16,.26,1.4) 200ms;
     box-shadow: 0px 0px 14px #999999;
-    transform: translateX(1px);
+    transform: translateX(8px);
   }
 `;
 
