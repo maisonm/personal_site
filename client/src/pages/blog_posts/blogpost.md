@@ -3,6 +3,7 @@ path: '/first-post'
 title: 'Test Blog Post'
 date: 'September 9th, 2018'
 image: './js.png'
+description: 'In this post, I go into detail building a small weather app with React & Node.'
 ---
 
 ![](js.png)
