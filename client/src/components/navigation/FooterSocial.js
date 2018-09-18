@@ -1,30 +1,7 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { bounceInUp } from 'react-animations';
 
-const slideUp = keyframes`${bounceInUp}`;
-
-const FooterContainer = styled.div`
-    position: fixed;
-    bottom: 18px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    animation: 1.5s ease-in ${slideUp} forwards;
-    animation-delay: 1.5s;
-`;
-
-const LinkSvg = styled.svg`
-    transition: .2s;
-    margin-left: 16px;
-    margin-right: 16px;
-
-    &:hover {
-        fill: #3A6EA5;
-        transition: .2s;  
-    }
-`;
+// Styled Components
+import { FooterContainer, LinkSvg } from './styles';
 
 const FooterSocial = () => (
   <FooterContainer>

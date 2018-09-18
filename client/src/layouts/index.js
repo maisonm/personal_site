@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 
 import Navbar from '../components/navigation/Navbar';
 import Footer from '../components/navigation/FooterSocial';
-import Header from '../components/header';
 import './index.css';
 
 const Layout = ({ children, data }) => (

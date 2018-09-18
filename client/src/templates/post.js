@@ -3,13 +3,13 @@ import Link from 'gatsby-link';
 import { Follow, Share } from 'react-twitter-widgets';
 
 // Styles
-import './styles/blog_posts/code_highlighting.css'; // This is custom CSS for PrismJs syntax highlighting
+import './styles/post/code_highlighting.css'; // This is custom CSS for PrismJs syntax highlighting
 
 import {
   BlogTitle, BlogContentContainer, BlogPost,
   BlogDetails, BlogInfo, Thumbnail, BlogContent,
   Content, TwitterShare, BackLink,
-} from './styles/blog_posts/styles';
+} from './styles/post/styles';
 
 
 export default function Template({ data }) {
@@ -28,7 +28,7 @@ export default function Template({ data }) {
             </TwitterShare>
             <BackLink>
               <Link
-                to="/"
+                to="/blog"
                 innerRef={(el) => { this.myLink = el; }}
               >
                &#60; back
@@ -54,13 +54,6 @@ export const postQuery = graphql`
           path
           title
           date
-          image {
-            childImageSharp {
-              resolutions {
-                src
-              }
-            }
-          }
         }
       }
     }
