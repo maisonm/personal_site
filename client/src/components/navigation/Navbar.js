@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styled from 'styled-components';
 
 // Assets
 import PersonalLogo from '../assets/navbar/maison-logo.svg';
@@ -33,14 +32,14 @@ const Navbar = () => (
       </SiteLink>
       <SiteLink>
         <Link
-          to="/first-post"
+          to="/blog"
         >
         blog
         </Link>
       </SiteLink>
       <SiteLink>
         <Link
-          to="/"
+          to="/projects"
         >
         projects
         </Link>
