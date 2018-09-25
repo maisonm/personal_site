@@ -23,7 +23,11 @@ const BlogCard = ({ post }) => (
     <BlogTagIcons>
       <p>Tags | </p>
       {
-          post.node.frontmatter.tags.map((icon, i) => <p key={i}> { icon } </p>)
+          post.node.frontmatter.tags.map((icon, i) => (
+            <p key={i}>
+              { icon }
+            </p>
+          ))
         }
     </BlogTagIcons>
     <BlogReadLink>

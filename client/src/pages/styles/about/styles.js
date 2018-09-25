@@ -170,3 +170,14 @@ export const TechnicalSkillBlock = styled.div`
         font-size: .8em;
     }
 `;
+
+export const TechIcons = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+& > img {
+  margin-left: 15px;
+}
+`;

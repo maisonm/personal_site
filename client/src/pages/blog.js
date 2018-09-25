@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import graphql from 'gatsby-link';
 
 // Styled Components
 import {
@@ -9,7 +10,6 @@ import {
 
 // Components
 import BlogCard from '../components/blog/BlogCard';
-
 
 export default function Blog({ data }) {
   const { allMarkdownRemark: post } = data;

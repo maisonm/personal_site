@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 // Assets
 import PersonalLogo from '../assets/navbar/maison-logo.svg';
 
-// Styled Components
+// Styles
 import { Bar, NavLinksContainer, SiteLink } from './styles';
 
 

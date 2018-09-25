@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Styled Components
+// Styles
 import { FooterContainer, LinkSvg } from './styles';
 
 const FooterSocial = () => (

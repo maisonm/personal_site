@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import graphql from 'gatsby-link';
 
+// Components
 import Navbar from '../components/navigation/Navbar';
 import Footer from '../components/navigation/FooterSocial';
+
+// Styles
 import './index.css';
 
 const Layout = ({ children, data }) => (
@@ -24,7 +28,8 @@ const Layout = ({ children, data }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default Layout;
