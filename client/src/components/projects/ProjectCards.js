@@ -17,25 +17,6 @@ const ProjectCards = () => (
   <ProjectCardBox>
     <ProjectCard>
       <ProjectImage>
-        <img src={TronixImg} alt="tronix project gif" />
-      </ProjectImage>
-      <ProjectDetails>
-        <Details>
-          <h5> r/Tronix | Reddit CSS redesign  </h5>
-          <p>
-           Collaborated with other Reddit members to help write the custom CSS to
-           redesign r/Tronix&apos;s CSS layout.
-           The goal was to create a minimilistic black/white/grey themed layout.
-           Nothing too fancy here, just pure CSS and a fun project to collaborate on!
-           Tronix (TRX) is a cryptocurrency, and it&apos;s official subreddit has
-           over 67k subscribers currently.
-          </p>
-          <a href="https://www.reddit.com/r/tronix" target="_blank" rel="noopener noreferrer"> | /Tronix | </a>
-        </Details>
-      </ProjectDetails>
-    </ProjectCard>
-    <ProjectCard>
-      <ProjectImage>
         <img src={PersonalSiteImg} alt="personal site gif" />
       </ProjectImage>
       <ProjectDetails>
@@ -67,6 +48,25 @@ const ProjectCards = () => (
           working with a 3rd party API.
           </p>
           <a href="https://github.com/maisonm/bitcoin_price_chart" target="_blank" rel="noopener noreferrer"> | Github Repo | </a>
+        </Details>
+      </ProjectDetails>
+    </ProjectCard>
+    <ProjectCard>
+      <ProjectImage>
+        <img src={TronixImg} alt="tronix project gif" />
+      </ProjectImage>
+      <ProjectDetails>
+        <Details>
+          <h5> r/Tronix | Reddit CSS redesign  </h5>
+          <p>
+           Collaborated with other Reddit members to help write the custom CSS to
+           redesign r/Tronix&apos;s CSS layout.
+           The goal was to create a minimilistic black/white/grey themed layout.
+           Nothing too fancy here, just pure CSS and a fun project to collaborate on!
+           Tronix (TRX) is a cryptocurrency, and it&apos;s official subreddit has
+           over 67k subscribers currently.
+          </p>
+          <a href="https://www.reddit.com/r/tronix" target="_blank" rel="noopener noreferrer"> | /Tronix | </a>
         </Details>
       </ProjectDetails>
     </ProjectCard>
@@ -105,7 +105,7 @@ const ProjectCards = () => (
           <p>
            This handicap calculator was a tool I made with vanilla Javascript to help me
            quickly gauge where my handicap was after each round of golf.
-           There are way better calcultors out there, but I needed something simple and
+           There are more complex calcultors out there, but I needed something simple and
            to the point.
            Just the basics here; vanilla Javascript, a bit of math, HTML5, and CSS3.
            I personally use this quite often.
