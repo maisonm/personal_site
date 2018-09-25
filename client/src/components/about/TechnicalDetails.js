@@ -2,9 +2,9 @@ import React from 'react';
 
 // Assets
 import Laptop from '../assets/about/laptop.svg';
-import CssIcon from '../assets/about/css3.svg';
+import Css from '../assets/about/css3.svg';
 import Git from '../assets/about/git.svg';
-import HtmlIcon from '../assets/about/html5.svg';
+import Html from '../assets/about/html5.svg';
 import Js from '../assets/about/js.svg';
 import Mongo from '../assets/about/mongo.svg';
 import NodeIcon from '../assets/about/node.svg';
@@ -18,6 +18,9 @@ import {
   HeaderCard, TheDeets, TechnicalSection,
   TechnicalSkillLabel, TechnicalSkillBlock, TechIcons, AboutMeText,
 } from '../../pages/styles/about/styles';
+
+
+const iconArray = [Js, ReactIcon, Css, Sass, Html, NodeIcon, Mongo, ReduxIcon, Git];
 
 const TechnicalDetails = () => (
   <MaisonTechnicalSection>
@@ -37,15 +40,9 @@ const TechnicalDetails = () => (
             MacOS/Windows
           </p>
           <TechIcons>
-            <img src={Js} alt="javascript logo" />
-            <img src={HtmlIcon} alt="html5 logo" />
-            <img src={CssIcon} alt="test" />
-            <img src={Sass} alt="sass logo" />
-            <img src={ReactIcon} alt="react js logo" />
-            <img src={ReduxIcon} alt="redux logo" />
-            <img src={NodeIcon} alt="node logo" />
-            <img src={Mongo} alt="mongodb logo" />
-            <img src={Git} alt="git logo" />
+            {
+              iconArray.map((name, i) => <img key={i} src={name} alt="tech icon" />)
+            }
           </TechIcons>
         </TheDeets>
       </TechnicalContainer>
