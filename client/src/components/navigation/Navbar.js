@@ -8,7 +8,7 @@ import PersonalLogo from '../assets/navbar/maison-logo.svg';
 import { Bar, NavLinksContainer, SiteLink } from './styles';
 
 // Components
-import MobileMenu from './mobile/MobileMenu';
+import MobileHamburger from './mobile/MobileHamburger';
 
 
 const Navbar = () => (
@@ -18,7 +18,7 @@ const Navbar = () => (
     >
       <img src={PersonalLogo} alt="maison logo" />
     </Link>
-    <MobileMenu />
+    <MobileHamburger />
     <NavLinksContainer>
       <SiteLink>
         <Link
