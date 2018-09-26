@@ -5,6 +5,8 @@ import { bounceInLeft, bounceInRight } from 'react-animations';
 const bounceLeft = keyframes`${bounceInLeft}`;
 const bounceRight = keyframes`${bounceInRight}`;
 
+
+
 export const AboutContainer = styled.div`
     position: fixed;
     top: 0;
@@ -109,7 +111,7 @@ export const AboutMeText = styled.div`
 export const AboutMaisonSection = styled.div`
     width: 100%;
     margin-bottom: 12px;
-    animation: 1.5s ease-in ${bounceLeft} forwards;
+    animation: 1s ease ${bounceLeft} forwards;
 `;
 
 export const MaisonTechnicalSection = styled.div`
@@ -117,7 +119,7 @@ export const MaisonTechnicalSection = styled.div`
     display: flex;
     align-items: center;
     margin-top: 10px;
-    animation: 1.5s ease-in ${bounceRight} forwards;
+    animation: 1s ease ${bounceRight} forwards;
 `;
 
 export const OneDayBlock = styled.div`

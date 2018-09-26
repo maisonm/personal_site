@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+import { fadeInUp } from 'react-animations';
+
+const fadeUp = keyframes`${fadeInUp}`;
 
 export const BlogPostCard = styled.div`
   min-height: 220px;
@@ -16,6 +20,7 @@ export const BlogPostCard = styled.div`
   transition: all cubic-bezier(.42,.16,.26,1.4) 400ms;
   margin-bottom: 14px;
   position: relative;
+  animation: .5s ease ${fadeUp} forwards;
 
     & > p {
     width: 80%;

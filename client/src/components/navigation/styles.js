@@ -1,6 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 import { bounceInUp } from 'react-animations';
 
+import { media } from '../../utils/cssMediaTemplate';
+
 const slideUp = keyframes`${bounceInUp}`;
 
 export const Bar = styled.div`
@@ -15,6 +17,7 @@ export const Bar = styled.div`
   margin-bottom: 10px;
   z-index: 99;
   background: #fff;
+  position: relative;
   /* This is the navbar logo home link wrapped in gatsby-link */
   & > a {
     display: flex;
@@ -27,6 +30,10 @@ export const NavLinksContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  ${media.medium`
+    display: none;
+  `}
+  
 `;
 
 export const SiteLink = styled.div`

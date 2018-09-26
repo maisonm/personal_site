@@ -51,6 +51,13 @@ export const postQuery = graphql`
       markdownRemark(frontmatter: { path: { eq: $path } }) {
         html
         frontmatter {
+          image {
+            childImageSharp {
+              resolutions {
+                src
+              }
+            }
+          }
           path
           title
           date

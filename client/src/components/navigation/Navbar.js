@@ -7,6 +7,9 @@ import PersonalLogo from '../assets/navbar/maison-logo.svg';
 // Styles
 import { Bar, NavLinksContainer, SiteLink } from './styles';
 
+// Components
+import MobileMenu from './mobile/MobileMenu';
+
 
 const Navbar = () => (
   <Bar>
@@ -15,19 +18,13 @@ const Navbar = () => (
     >
       <img src={PersonalLogo} alt="maison logo" />
     </Link>
+    <MobileMenu />
     <NavLinksContainer>
       <SiteLink>
         <Link
           to="/about"
         >
         about
-        </Link>
-      </SiteLink>
-      <SiteLink>
-        <Link
-          to="/"
-        >
-        contact
         </Link>
       </SiteLink>
       <SiteLink>
@@ -43,6 +40,11 @@ const Navbar = () => (
         >
         projects
         </Link>
+      </SiteLink>
+      <SiteLink>
+        <a href="mailto:maison.moa@gmail.com">
+        contact me
+        </a>
       </SiteLink>
     </NavLinksContainer>
 

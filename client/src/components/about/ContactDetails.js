@@ -17,10 +17,10 @@ const ContactInfo = () => (
         <img src={LocationDrop} alt="location drop" />
             Central Florida
       </p>
-      <p>
+      <a href="mailto:maison.moa@gmail.com">
         <img src={Email} alt="email icon" />
             maison.moa@gmail.com
-      </p>
+      </a>
       <a href="https://github.com/maisonm" target="_blank" rel="noopener noreferrer">
         <img src={LinkIcon} alt="link icon" />
             Github.com/maisonm
