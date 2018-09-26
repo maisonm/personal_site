@@ -10,14 +10,17 @@ export const MobileMenuOpened = styled.div`
 display: none;
 ${media.medium`
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 55px;
     right: 0;
-    background: #a8a8a8;
+    background: #020202;
     animation: ${bounceDown} 1s ease-in forwards;
-    border: solid red;
+    color: #C0C0C0;
 `}
 `;
 
@@ -31,7 +34,7 @@ ${media.medium`
     top: 55px;
     right: 0;
     background: #020202;
-    animation: ${bounceUp} 1s ease-in forwards;
+    animation: ${bounceUp} .8s ease-in forwards;
 `}
 `;
 
@@ -57,4 +60,34 @@ export const BurgerBar = styled.div`
     background: #020202;
     height: 3px;
     transition: .3s;
+`;
+
+export const MobileMenuLogo = styled.div`
+    & > img {
+      width: 48px;
+    }
+`;
+
+export const MobileMenuLinks = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+
+    & > a {
+        text-decoration: none;
+        color: #C0C0C0;
+        text-align: center;
+        font-size: 1.5em;
+    }
+`;
+
+export const MobileMenuFooter = styled.div`
+    padding: 4px;
+`;
+
+export const MobileLinkSvg = styled.svg`
+    margin-left: 16px;
+    margin-right: 16px;
+    fill: #3A6EA5;
 `;

@@ -4,18 +4,15 @@ import PropTypes from 'prop-types';
 // Styles
 import { MobileMenuOpened, MobileMenuClosed, MobileMenuOnLoad } from './styles';
 
-
 const MobileMenu = (props) => {
   const { clicks, menuOpened } = props.data;
-
-  const MenuContent = () => (
-    <p> Hello </p>
-  );
+  const { children } = props;
 
   const Menu = () => (menuOpened ? (
     <MobileMenuOpened>
-      <MenuContent />
+      { children }
     </MobileMenuOpened>
+
   ) : <MobileMenuClosed />);
 
 
@@ -29,6 +26,7 @@ const MobileMenu = (props) => {
 MobileMenu.propTypes = {
   clicks: PropTypes.number,
   menuOpened: PropTypes.bool,
+  children: PropTypes.array,
 };
 
 export default MobileMenu;
