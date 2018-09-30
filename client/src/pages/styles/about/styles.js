@@ -1,11 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
-import { bounceInLeft, bounceInRight } from 'react-animations';
+import { bounceInLeft, bounceInRight, fadeIn, bounceInUp } from 'react-animations';
+import { media } from '../../../utils/cssMediaTemplate';
+
 
 const bounceLeft = keyframes`${bounceInLeft}`;
 const bounceRight = keyframes`${bounceInRight}`;
 
-
+const bounceUp = keyframes`${bounceInUp}`;
 
 export const AboutContainer = styled.div`
     position: fixed;
@@ -16,6 +18,16 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    ${media.medium`
+        height: 780px;
+        position: relative;
+        flex-direction: column;
+        z-index: 1;
+        background: #ffffff;
+        padding-top: 14px;
+    `}
+    
 `;
 
 export const HeaderCard = styled.div`
@@ -33,6 +45,37 @@ export const HeaderCard = styled.div`
         font-style: italic;
         letter-spacing: .2px;
     }
+
+    ${media.medium`
+        display: none;
+    `}
+`;
+
+export const MobileHeaderCard = styled.div`
+        display: none;
+        ${media.medium`
+            display: flex;
+            background: #020202;
+            color: #c0c0c0;
+            min-width: 130px;
+            height: 25px;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 2px;
+
+            & > p {
+                font-size: .85em;
+                font-style: normal;
+                letter-spacing: .2px;
+            }
+
+            & > p:nth-child(2) {
+                font-style: regu;
+                font-weight: bold;
+                color: #FFFFFF;
+                font-size: 1em;
+            }
+        `}
 `;
 
 export const MaisonContainer = styled.div`
@@ -41,6 +84,9 @@ export const MaisonContainer = styled.div`
     justify-content: center;
     align-items: center;
     max-width: 75%;
+    
+    ${media.medium`
+    `}
 `;
 
 export const ContactDetails = styled.div`
@@ -91,6 +137,9 @@ export const TheDeets = styled.div`
         }
     }
     
+    ${media.medium`
+        display: none;
+    `}
 `;
 
 export const AboutMeText = styled.div`
@@ -112,6 +161,10 @@ export const AboutMaisonSection = styled.div`
     width: 100%;
     margin-bottom: 12px;
     animation: 1s ease ${bounceLeft} forwards;
+
+    ${media.medium`
+        animation: 1.5s ease ${bounceUp} forwards;
+    `}
 `;
 
 export const MaisonTechnicalSection = styled.div`
@@ -120,6 +173,10 @@ export const MaisonTechnicalSection = styled.div`
     align-items: center;
     margin-top: 10px;
     animation: 1s ease ${bounceRight} forwards;
+
+    ${media.medium`
+        animation: 1.5s ease ${bounceUp} forwards;
+    `}
 `;
 
 export const OneDayBlock = styled.div`
@@ -149,6 +206,10 @@ export const OneDayBlock = styled.div`
         margin-bottom: -14px;
         color: #c0c0c0;
     }
+
+    ${media.medium`
+        display: none;
+    `}
 `;
 
 export const TechnicalContainer = styled.div`

@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { bounceInLeft, bounceInRight } from 'react-animations';
+import { media } from '../../../utils/cssMediaTemplate';
 
 const slideInLeft = keyframes`${bounceInLeft}`;
 const slideInRight = keyframes`${bounceInRight}`;
@@ -49,13 +50,17 @@ export const HeroContainer = styled.div`
     opacity: 0;
   }
   
-  @media (max-width: 420px) {
+  ${media.medium`
     span {
       width: 80%;
     }
-
     span > p {
       font-size: .7em;
+      height: 100%;
     }
-  }
+  `};
+
+
 `;
+
+export default HeroContainer;

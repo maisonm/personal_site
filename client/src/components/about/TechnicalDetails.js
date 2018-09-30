@@ -17,8 +17,8 @@ import {
   MaisonTechnicalSection, OneDayBlock, TechnicalContainer,
   HeaderCard, TheDeets, TechnicalSection,
   TechnicalSkillLabel, TechnicalSkillBlock, TechIcons, AboutMeText,
+  MobileHeaderCard,
 } from '../../pages/styles/about/styles';
-
 
 const iconArray = [Js, ReactIcon, Css, Sass, Html, NodeIcon, Mongo, ReduxIcon, Git];
 
@@ -33,6 +33,9 @@ const TechnicalDetails = () => (
     </OneDayBlock>
     <TechnicalSection>
       <TechnicalContainer>
+        <MobileHeaderCard>
+          <p>Techincal</p>
+        </MobileHeaderCard>
         <HeaderCard><p>Techincal</p></HeaderCard>
         <TheDeets>
           <p>

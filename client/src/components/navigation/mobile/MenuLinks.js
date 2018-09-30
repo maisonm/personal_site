@@ -5,8 +5,6 @@ import Link from 'gatsby-link';
 import { MobileMenuLinks } from './styles';
 
 const MenuLinks = (props) => {
-  console.log(props);
-
   const { linkClick } = props;
 
   const closeMenu = () => {

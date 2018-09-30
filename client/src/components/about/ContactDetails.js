@@ -5,12 +5,23 @@ import Email from '../assets/about/email.svg';
 import LinkIcon from '../assets/about/link.svg';
 import LocationDrop from '../assets/about/location.svg';
 
+// Components
+import DropDownHeader from './mobile/DropDownHeader';
+
 // Styles
-import { ContactDetails, HeaderCard, TheDeets } from '../../pages/styles/about/styles';
+import { ContactDetails, HeaderCard, MobileHeaderCard, TheDeets } from '../../pages/styles/about/styles';
 
 
 const ContactInfo = () => (
   <ContactDetails>
+
+    <DropDownHeader>
+      <MobileHeaderCard>
+        <p> Maison Moa </p>
+        <p> &or; </p>
+      </MobileHeaderCard>
+    </DropDownHeader>
+
     <HeaderCard><p>Maison Moa</p></HeaderCard>
     <TheDeets>
       <p>

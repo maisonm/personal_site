@@ -1,6 +1,6 @@
 /* This is to override the prismjs code highlighting inside the markdown files */
 
-/* Modify the highlighted texts properties */
+/* Modify the highlighted text properties */
 code.language-text {
    font-size: .85em;
    background-color:#e0e0e0!important;

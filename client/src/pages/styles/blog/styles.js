@@ -22,5 +22,4 @@ export const BlogCardContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6px;
-  }
 `;

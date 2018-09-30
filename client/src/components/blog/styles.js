@@ -2,6 +2,8 @@ import styled, { keyframes } from 'styled-components';
 
 import { fadeInUp } from 'react-animations';
 
+import { media } from '../../utils/cssMediaTemplate';
+
 const fadeUp = keyframes`${fadeInUp}`;
 
 export const BlogPostCard = styled.div`
@@ -23,14 +25,18 @@ export const BlogPostCard = styled.div`
   animation: .5s ease ${fadeUp} forwards;
 
     & > p {
-    width: 80%;
-  }
+      width: 80%;
+    }
+    
+    &:hover {
+      transition: all cubic-bezier(.42,.16,.26,1.4) 200ms;
+      box-shadow: 0px 0px 12px #a1bede;
+      transform: translateY(-1px);
+    }
 
-  &:hover {
-    transition: all cubic-bezier(.42,.16,.26,1.4) 200ms;
-    box-shadow: 0px 0px 12px #a1bede;
-    transform: translateY(-1px);
-  }
+    ${media.medium`
+      min-width: 80%;
+    `}
 `;
 
 export const BlogTitle = styled.p`

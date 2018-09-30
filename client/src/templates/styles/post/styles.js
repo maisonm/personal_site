@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { media } from '../../../utils/cssMediaTemplate';
+
 export const BlogTitle = styled.h3`
 `;
 
@@ -15,11 +17,14 @@ export const BlogContentContainer = styled.div`
 `;
 
 export const BlogPost = styled.div`
-    /* border: solid black; */
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 500px;
     
+    ${media.medium`
+        flex-direction: column;
+    `}
 `;
 
 export const BlogDetails = styled.div`
@@ -42,7 +47,6 @@ export const BlogDetails = styled.div`
 `;
 
 export const BlogInfo = styled.div`
-    /* border: solid orange; */
     min-width: 250px;
     max-width: 300px;
     margin-left: 4px;
@@ -50,18 +54,28 @@ export const BlogInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    ${media.medium`
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    `}
 `;
 
 export const Thumbnail = styled.img`
-   width: 182px;
+   width: 220px;
    margin-top: 16px;
 `;
 
 export const BlogContent = styled.div`
-    /* border: solid purple; */
     overflow: auto;
     flex-basis: 60%;
     margin-right: 4px;
+
+    ${media.medium`
+        width: 90%;
+        
+    `}
 `;
 
 export const Content = styled.div`

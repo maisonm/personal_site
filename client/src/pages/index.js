@@ -9,12 +9,12 @@ const IndexPage = () => (
       <p>I&apos;m a web developer living life in Florida.</p>
     </span>
     <span>
-      <p>Feel free to check out my</p>
-      <p>blog, projects, or if you have a Q, contact me anytime.</p>
+      <p>Feel free to contact me</p>
+      <p>via email at anytime if you have a question.</p>
     </span>
     <span>
-      <p>This website was built with React,</p>
-      <p>Gatsby, GraphQL, NodeJS, and good ole fashioned passion.</p>
+      <p>This website was built with</p>
+      <p>React, Gatsby, GraphQL, and NodeJs.</p>
     </span>
   </HeroContainer>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Link, { graphql } from 'gatsby-link';
 import { Follow, Share } from 'react-twitter-widgets';
 
 // Styles
