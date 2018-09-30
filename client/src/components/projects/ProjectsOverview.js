@@ -8,10 +8,11 @@ const ProjectsOverview = () => (
     <OverviewHeading>Projects</OverviewHeading>
     <OverviewText>
           The project&apos;s code can be
-          found via the Github link
+          found via the links
           on the cards. Some projects
-          are hosted and live, and others
-          are living quietly in their repo.
+          are hosted, and others
+          are living quietly in their repo. Client
+          projects are not shown.
     </OverviewText>
     <OverviewText>
           If there is a project you’d like to

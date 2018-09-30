@@ -25,7 +25,8 @@ const ProjectCards = () => (
           <p>
            This website is built with React, Gatsby, &amp; GraphQL, all hosted via Heroku.
            Blog posts are generated from markdown files that support code block highlighting
-           via PrismJS and inserting images. The CSS was written with styled-components. There were no CSS libraries used for the mobile features like the mobile menu. This site is 100% mobile friendly.
+           via PrismJS and inserting images. The CSS was written
+           with styled-components. This site is responsive across all mobile devices.
            This site will periodically undergo changes and updates as I learn more.
           </p>
           <a href="https://www.github.com"> | Github Repo | </a>
