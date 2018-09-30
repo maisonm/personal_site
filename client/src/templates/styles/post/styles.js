@@ -19,9 +19,9 @@ export const BlogContentContainer = styled.div`
 export const BlogPost = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 500px;
-    
+    width: 80%;
     ${media.medium`
         flex-direction: column;
     `}
@@ -69,18 +69,21 @@ export const Thumbnail = styled.img`
 
 export const BlogContent = styled.div`
     overflow: auto;
-    flex-basis: 60%;
+    flex-basis: 80%;
     margin-right: 4px;
+    height: 100%;
+    overflow: auto;
 
     ${media.medium`
-        width: 90%;
+        width: 100%;
+        margin-top: 10px;
         
     `}
 `;
 
 export const Content = styled.div`
     & > p {
-      font-size: .8em;
+      font-size: .82em;
     }
 `;
 
