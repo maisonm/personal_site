@@ -9,7 +9,7 @@ import LocationDrop from '../assets/about/location.svg';
 import DropDownHeader from './mobile/DropDownHeader';
 
 // Styles
-import { ContactDetails, HeaderCard, MobileHeaderCard, TheDeets } from '../../pages/styles/about/styles';
+import { ContactDetails, HeaderCard, MobileHeaderCard, TheDeets } from '../../styles/about/styles';
 
 
 const ContactInfo = () => (

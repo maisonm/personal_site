@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 import { bounceInLeft, bounceInRight, bounceInUp } from 'react-animations';
-import media from '../../utils/cssMediaTemplate';
+import { media } from '../../utils/cssMediaTemplate';
 
 
 const bounceLeft = keyframes`${bounceInLeft}`;

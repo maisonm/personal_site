@@ -3,7 +3,7 @@ import React from 'react';
 // Styles
 import {
   AboutContainer, MaisonContainer, AboutMaisonSection,
-} from './styles/about/styles';
+} from '../styles/about/styles';
 
 // Components
 import ContactInfo from '../components/about/ContactDetails';

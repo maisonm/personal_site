@@ -6,7 +6,7 @@ import graphql from 'gatsby-link';
 import {
   BlogPostsPageContainer,
   BlogCardContainer,
-} from './styles/blog/styles';
+} from '../styles/blog/styles';
 
 // Components
 import BlogCard from '../components/blog/BlogCard';

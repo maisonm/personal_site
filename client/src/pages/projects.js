@@ -3,7 +3,7 @@ import React from 'react';
 // Styles
 import {
   ProjectsPageContainer, ProjectCardsContainer,
-} from './styles/projects/styles';
+} from '../styles/projects/styles';
 
 // Components
 import ProjectCards from '../components/projects/ProjectCards';

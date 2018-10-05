@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HeroContainer } from './styles/index/styles';
+import { HeroContainer } from '../styles/index/styles';
 
 const IndexPage = () => (
   <HeroContainer>

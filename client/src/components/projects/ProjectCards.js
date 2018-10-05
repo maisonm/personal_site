@@ -3,7 +3,7 @@ import React from 'react';
 // Styles
 import {
   ProjectCard, ProjectImage, ProjectDetails, Details, ProjectCardBox,
-} from '../../pages/styles/projects/styles';
+} from '../../styles/projects/styles';
 
 // Assets
 import TronixImg from '../assets/projects/project_image/tronix.gif';

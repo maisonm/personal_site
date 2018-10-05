@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles
-import { ProjectsOverviewContainer, OverviewHeading, OverviewText } from '../../pages/styles/projects/styles';
+import { ProjectsOverviewContainer, OverviewHeading, OverviewText } from '../../styles/projects/styles';
 
 const ProjectsOverview = () => (
   <ProjectsOverviewContainer>

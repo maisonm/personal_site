@@ -18,7 +18,7 @@ import {
   HeaderCard, TheDeets, TechnicalSection,
   TechnicalSkillLabel, TechnicalSkillBlock, TechIcons, AboutMeText,
   MobileHeaderCard,
-} from '../../pages/styles/about/styles';
+} from '../../styles/about/styles';
 
 const iconArray = [Js, ReactIcon, Css, Sass, Html, NodeIcon, Mongo, ReduxIcon, Git];
 

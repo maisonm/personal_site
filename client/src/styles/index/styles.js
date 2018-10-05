@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { bounceInLeft, bounceInRight } from 'react-animations';
-import media from '../../utils/cssMediaTemplate';
+import { media } from '../../utils/cssMediaTemplate';
 
 const slideInLeft = keyframes`${bounceInLeft}`;
 const slideInRight = keyframes`${bounceInRight}`;

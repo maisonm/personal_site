@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles
-import { AboutMeText } from '../../pages/styles/about/styles';
+import { AboutMeText } from '../../styles/about/styles';
 
 const AboutMe = () => (
   <AboutMeText>
