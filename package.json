@@ -8,7 +8,9 @@
   },
   "author": "Maison Moa",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "gatsby": "^1.9.277"
+  },
   "devDependencies": {
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.1.0",
