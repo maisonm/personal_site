@@ -1,9 +1,9 @@
-import styled, { keyframes } from 'styled-components';
-import { bounceInUp } from 'react-animations';
+import styled, { keyframes } from 'styled-components'
+import { bounceInUp } from 'react-animations'
 
-import { media } from '../../utils/cssMediaTemplate';
+import { media } from '../../utils/cssMediaTemplate'
 
-const slideUp = keyframes`${bounceInUp}`;
+const slideUp = keyframes`${bounceInUp}`
 
 export const Bar = styled.div`
   max-width: 100%;
@@ -23,7 +23,7 @@ export const Bar = styled.div`
     display: flex;
     align-items: center;
   }
-`;
+`
 
 export const NavLinksContainer = styled.div`
   display: flex;
@@ -32,9 +32,8 @@ export const NavLinksContainer = styled.div`
 
   ${media.medium`
     display: none;
-  `}
-  
-`;
+  `};
+`
 
 export const SiteLink = styled.div`
   display: flex;
@@ -43,37 +42,37 @@ export const SiteLink = styled.div`
 
   & > a {
     text-decoration: none;
-    font-size: .8em;
+    font-size: 0.8em;
     font-weight: 500;
-    transition: .3s;
+    transition: 0.3s;
     color: #020202;
 
     &:hover {
-      color: #3A6EA5;
-      transition: .3s;
-      letter-spacing: .2px;
+      color: #3a6ea5;
+      transition: 0.3s;
+      letter-spacing: 0.2px;
     }
   }
-`;
+`
 
 export const FooterContainer = styled.div`
-    position: fixed;
-    bottom: 18px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    animation: 1.5s ease-in ${slideUp} forwards;
-    animation-delay: 1.5s;
-`;
+  position: fixed;
+  bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: 1.5s ease-in ${slideUp} forwards;
+  animation-delay: 1.5s;
+`
 
 export const LinkSvg = styled.svg`
-    transition: .2s;
-    margin-left: 16px;
-    margin-right: 16px;
+  transition: 0.2s;
+  margin-left: 16px;
+  margin-right: 16px;
 
-    &:hover {
-        fill: #3A6EA5;
-        transition: .2s;  
-    }
-`;
+  &:hover {
+    fill: #3a6ea5;
+    transition: 0.2s;
+  }
+`

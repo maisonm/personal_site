@@ -1,6 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { HeroContainer } from '../styles/index/styles';
+import { HeroContainer } from '../styles/index/styles'
+
+//Components
+import Footer from '../components/navigation/FooterSocial'
 
 const IndexPage = () => (
   <HeroContainer>
@@ -16,7 +19,8 @@ const IndexPage = () => (
       <p>This website was built with</p>
       <p>React, Gatsby, GraphQL, and NodeJs.</p>
     </span>
+    <Footer />
   </HeroContainer>
-);
+)
 
-export default IndexPage;
+export default IndexPage

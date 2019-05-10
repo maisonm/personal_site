@@ -22,6 +22,9 @@
     
     - Images are to be stored in the corresponding blog post directory
 
+4: Add code highlighting to markdown
 
+    - Use backticks as normally would with .md files
+    - ex. `const a = 2`
 
 

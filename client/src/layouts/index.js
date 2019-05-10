@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import graphql from 'gatsby-link';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import graphql from 'gatsby-link'
 
 // Components
-import Navbar from '../components/navigation/Navbar';
-import Footer from '../components/navigation/FooterSocial';
+import Navbar from '../components/navigation/Navbar'
+import Footer from '../components/navigation/FooterSocial'
 
 // Styles
-import './index.css';
+import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -20,19 +20,17 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Navbar />
-    <div>
-      {children()}
-    </div>
-    <Footer />
+    <div>{children()}</div>
+    {/* <Footer /> */}
   </div>
-);
+)
 
 Layout.propTypes = {
   children: PropTypes.func.isRequired,
   data: PropTypes.object.isRequired,
-};
+}
 
-export default Layout;
+export default Layout
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -42,4 +40,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

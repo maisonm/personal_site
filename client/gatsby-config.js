@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Maison Moa | Web Developer',
   },
-  plugins: ['gatsby-plugin-react-helmet',
+  plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -13,7 +14,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 320,
+              maxWidth: 400,
             },
           },
           {
@@ -35,4 +36,4 @@ module.exports = {
       },
     },
   ],
-};
+}

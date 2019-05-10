@@ -1,14 +1,17 @@
-import React from 'react';
+import React from 'react'
 
 // Styles
 import {
-  AboutContainer, MaisonContainer, AboutMaisonSection,
-} from '../styles/about/styles';
+  AboutContainer,
+  MaisonContainer,
+  AboutMaisonSection,
+} from '../styles/about/styles'
 
 // Components
-import ContactInfo from '../components/about/ContactDetails';
-import AboutMe from '../components/about/AboutMe';
-import TechnicalDetails from '../components/about/TechnicalDetails';
+import ContactInfo from '../components/about/ContactDetails'
+import AboutMe from '../components/about/AboutMe'
+import TechnicalDetails from '../components/about/TechnicalDetails'
+import Footer from '../components/navigation/FooterSocial'
 
 const AboutPage = () => (
   <AboutContainer>
@@ -19,7 +22,8 @@ const AboutPage = () => (
       </AboutMaisonSection>
       <TechnicalDetails />
     </MaisonContainer>
+    <Footer />
   </AboutContainer>
-);
+)
 
-export default AboutPage;
+export default AboutPage
