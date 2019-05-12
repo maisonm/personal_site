@@ -10,17 +10,20 @@ const success = require('../../utils/constants/index').success_constants;
 const { nodemailer_error } = errors;
 const { nodemailer_success } = success;
 //Enviroment Variables
-const { EMAIL_PROVIDER } = process.env;
+const { EMAIL_USER, EMAIL_ALIAS } = process.env;
 
 exports.get_test = (req, res) => {
   const { body } = req;
-  const { emailFrom, subject, text } = body;
+  const { subject, email, number, text, name } = body;
+
+  //HTML Email body
+  const emailBody = `${text} <br><br>Name: ${name} <br> Email: ${email} <br>Phone: ${number}`;
 
   let mail = {
-    from: emailFrom,
-    to: EMAIL_PROVIDER,
+    from: EMAIL_ALIAS,
+    to: EMAIL_USER,
     subject,
-    text
+    html: emailBody
   };
 
   smtpTransport.sendMail(mail, err => {

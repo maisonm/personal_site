@@ -1,11 +1,14 @@
 const mailer = require('nodemailer');
 
-const { EMAIL_PROVIDER, EMAIL_PASS } = process.env;
+const { EMAIL_USER, EMAIL_PASS, EMAIL_HOST, EMAIL_PORT } = process.env;
 
 exports.smtpTransport = mailer.createTransport({
-  service: 'gmail',
+  host: EMAIL_HOST,
+  port: EMAIL_PORT,
+  secure: true,
   auth: {
-    user: EMAIL_PROVIDER,
-    pass: EMAIL_PASS
-  }
+    user: EMAIL_USER, // your domain email address
+    pass: EMAIL_PASS // your password
+  },
+  logger: true
 });
